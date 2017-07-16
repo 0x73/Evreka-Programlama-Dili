@@ -13,3 +13,8 @@
    * **Pyinstaller** adlı pip paketi ile ise çalıştırılabilir '.exe' ve 'linux binary' dosyalarına derlenmiştir.
    * **BASIC**'e benzer bir yapıya sahiptir.
    * Türkçe bir sözdizimine sahip olduğu için öğrenmesi de ayrıca kolaydır.
+# Bağışlarınız için;
+   * [Patreon hesabım](https://www.patreon.com/eralpcelebi)
+   * Önerileriniz için;
+      *Twitter @CelebiEralp
+      *E-mail eralpdevelopments@gmail.com

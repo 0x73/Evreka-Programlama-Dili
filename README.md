@@ -10,7 +10,6 @@
 # Teknik Detaylar
    * **Python** ile yazılmıştır.
    * **Cython** adlı bir  Python-C derleyicisi ile derlenmiştir.
-   * **Pyinstaller** adlı pip paketi ile ise çalıştırılabilir '.exe' ve 'linux binary' dosyalarına derlenmiştir.
    * **BASIC**'e benzer bir yapıya sahiptir.
    * Türkçe bir sözdizimine sahip olduğu için öğrenmesi de ayrıca kolaydır.
 # Bağışlarınız için;

@@ -17,3 +17,5 @@
    * Önerileriniz için;
       *Twitter @CelebiEralp
       *E-mail eralpdevelopments@gmail.com
+   * Önerileriniz için;
+      *E-mail metahex12@gmail.com

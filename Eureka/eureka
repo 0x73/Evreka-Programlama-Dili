@@ -22,7 +22,8 @@ def run_file():
     toks = lex(data)
     parser(toks)
 
-if argv[1] == None:
-    run_shell()
-else:
+try:
+    test_a = argv[1]
     run_file()
+except:
+    run_shell()

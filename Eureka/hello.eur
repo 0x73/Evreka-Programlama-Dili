@@ -1,0 +1,2 @@
+&eur = girdi("Hello:")
+yazdir &eur

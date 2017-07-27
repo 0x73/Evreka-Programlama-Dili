@@ -20,10 +20,9 @@ def run_shell():
 def run_file():
     data = open_file(argv[1])
     toks = lex(data)
-    parser(toks , symbols)
+    parser(toks)
 
-try:
-    test = argv[1]
-    run_file()
-except:
+if argv[1] == None:
     run_shell()
+else:
+    run_file()

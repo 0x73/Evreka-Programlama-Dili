@@ -84,7 +84,7 @@ def parser(toks):
                 elif toks[i + 2][0:4] == 'DEG:':
                     YERLESTIR(toks[i], alDEGISKEN(toks[i + 2][4:], symbols))
                 elif toks[i + 2] == 'GIRDI':
-                    data = input(toks[i + 3].replace('"', ''))
+                    data = raw_input(toks[i + 3].replace('"', ''))
                     YERLESTIR(toks[i], data)
                 i += 3
             else:

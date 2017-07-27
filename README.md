@@ -9,7 +9,7 @@
 
 # Teknik Detaylar
    * **Python** ile yazılmıştır.
-   * **Cython** adlı bir  Python-C derleyicisi ile derlenmiştir.
+   * Python'ın modül derleyicileri ile derlenerek yüksek performans elde edilir.
    * **BASIC**'e benzer bir yapıya sahiptir.
    * Türkçe bir sözdizimine sahip olduğu için öğrenmesi de ayrıca kolaydır.
 # Bağışlarınız için;

@@ -12,7 +12,7 @@ def run_shell():
         while True:
             data = raw_input("<?>: ")
             toks = lex(data)
-            parser(toks , symbols)
+            parser(toks)
     except:
         print("\n")
         exit()

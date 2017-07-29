@@ -64,6 +64,9 @@ def lex(filecontents):
         elif tok == 'YAZDIR' or tok == 'yazdir':
             tokens.append('YAZDIR')
             tok = ''
+        elif tok == 'CIK' or tok == "cik":
+            tokens.append("CIK")
+            tok = ""
         elif tok == 'yap' or tok == 'YAP':
             tokens.append('YAP')
             tok = ''

@@ -53,6 +53,8 @@ def parser(toks):
                                     data = input(toks[i + 3].replace('"', ''))
                                     YERLESTIR(toks[i], data)
                                 i += 3
+                            elif toks[i] == "CIK":
+                                exit()
                             else:
                                 i += 1
 
@@ -91,6 +93,8 @@ def parser(toks):
                     data = raw_input(toks[i + 3].replace('"', ''))
                     YERLESTIR(toks[i], data)
                 i += 3
+            elif toks[i] == "CIK":
+                exit()
             else:
                 i += 1
 

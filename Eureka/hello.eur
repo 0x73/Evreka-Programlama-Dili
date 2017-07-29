@@ -1,2 +1,3 @@
 &eur = girdi("Hello:")
 yazdir &eur
+yazdir 100*100

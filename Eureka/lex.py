@@ -16,6 +16,17 @@ def lex(filecontents):
                 tok = ''
             else:
                 tok = ' '
+            if expr != '' and isexpr == 1:
+                tokens.append('OPER:' + expr)
+                expr = ''
+            elif expr != '' and isexpr == 0:
+                tokens.append('SAYI:' + expr)
+                expr = ''
+            elif var != '':
+                tokens.append('DEG:' + var)
+                var = ''
+                varstarted = 0
+            tok = ''
         elif tok == '\n' or tok == '<EOF>':
             if expr != '' and isexpr == 1:
                 tokens.append('OPER:' + expr)

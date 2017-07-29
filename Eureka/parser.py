@@ -1,11 +1,13 @@
 symbols = {}
 
+
 def alDEGISKEN(varname, symbols):
     if varname in symbols:
         return symbols[varname]
 
 
 def YERLESTIR(varname, varvalue):
+    print("")
     global symbols
     symbols[varname[4:]] = varvalue
 
@@ -14,6 +16,7 @@ def parser(toks):
     i = 0
     try:
         while i < len(toks):
+            #print(toks)
             if toks[i] == 'EGER':
                 if toks[i + 2] == 'ESES':
                     if int(toks[i + 1][5:]) == int(toks[i + 3][5:]):
@@ -29,6 +32,7 @@ def parser(toks):
                                     data = data[5:]
                                     data = eval(data)
                                 elif data[0:3] == 'DEG':
+                                    print(symbols)
                                     data = alDEGISKEN(data[4:], symbols)
                                 print data
                                 i += 2
@@ -90,5 +94,5 @@ def parser(toks):
             else:
                 i += 1
 
-    except:
-        print ''
+    except Exception as e:
+        print(e)

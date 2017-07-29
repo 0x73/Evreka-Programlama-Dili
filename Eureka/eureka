@@ -6,13 +6,16 @@ from open_file import *
 from lex import *
 from parser import *
 
+symbols = {}
+
 def run_shell():
     try:
-        print("Eureka 1.01v MIT(C) \n")
+        print("Eureka 1.02v MIT(C) \n")
         while True:
-            data = raw_input("<?>: ")
+            data = raw_input("<?>: ") + "<EOF>"
             toks = lex(data)
             parser(toks)
+            ##print(symbols)
     except:
         print("\n")
         exit()

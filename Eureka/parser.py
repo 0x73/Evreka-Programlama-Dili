@@ -19,6 +19,10 @@ def parser(toks):
             #print(toks)
             if toks[i] == 'EGER':
                 if toks[i + 2] == 'ESES':
+                    if toks[i + 1][0:4] == "OPER":
+                        toks[i + 1] = "SAYI:" + str(eval(toks[i + 1][5:]))
+                    if toks[i + 3][0:4] == "OPER":
+                        toks[i + 3] = "SAYI:" + str(eval(toks[i + 3][5:]))
                     if int(toks[i + 1][5:]) == int(toks[i + 3][5:]):
                         i += 5
                         while toks != 'YAP':
@@ -98,5 +102,9 @@ def parser(toks):
             else:
                 i += 1
 
+
     except Exception as e:
-        print(e)
+        if e == "list index out of range":
+            pass
+        else:
+            print(e)

@@ -1,11 +1,11 @@
-# Eureka: Programlama-Dili
-**Eureka**, Python'ın gücü , C'nin performansı ve BASIC'in kolaylığını tek bir çatı altında toplayan, türkçe yapılı , yüksek seviye bir programlama dilidir.
+# Evreka: Programlama-Dili
+**Evreka**, Python'ın gücü , C'nin performansı ve BASIC'in kolaylığını tek bir çatı altında toplayan, türkçe yapılı , yüksek seviye bir programlama dilidir.
 
-# Eureka'nın Amacı
-**Eureka** ; Türkiye'deki bilgisayar bilimlerine katkıda bulunmak , bilimsel kalkınmaya yardım etmek ve öğrencilerin ya da yeni programlamaya başlayanların kolay fonksiyonlar ve kod yapısı ile herkesin program yazabileceğini fark etmelerini sağlamaktır.
+# Evreka'nın Amacı
+**Evreka** ; Türkiye'deki bilgisayar bilimlerine katkıda bulunmak , bilimsel kalkınmaya yardım etmek ve öğrencilerin ya da yeni programlamaya başlayanların kolay fonksiyonlar ve kod yapısı ile herkesin program yazabileceğini fark etmelerini sağlamaktır.
 
 # Gelişim Süreci
-**Eureka** , bendeniz Eralp Çelebi tarafından geliştirlen, MIT lisansı altında , açık kaynak kodlu bir yazılımdır. Elbet ana proje benim tarafımdan geliştirilmeye devam edilse de , eğer normal seviyede Python bilginiz var ise özgürce **Eureka**'nın kaynak kodunu düzenleyebilir , geliştirebilir  hatta kişiselleştirebilirsiniz ve bu sayede gecikmiş veya yetersiz gördüğünüz yenilikleri şahsen kendiniz değiştirebilirsiniz. Bunun dışında ben bir öğrenci olduğumdan dolayı yenilemeler aksamaya uğrayabilir ve bazen sizin görüşünüz de söylediğim gibi yetersiz görünebilir. Ama eğer bu projeye destek olmak , ve Türkiye'yi desteklemek istiyorsanız bana sizin görüşünüzde eklenmesi gerekenleri söylemeniz veya bağış yapmanız yeterlidir.
+**Evreka** , bendeniz Eralp Çelebi tarafından geliştirlen, MIT lisansı altında , açık kaynak kodlu bir yazılımdır. Elbet ana proje benim tarafımdan geliştirilmeye devam edilse de , eğer normal seviyede Python bilginiz var ise özgürce **Evreka**'nın kaynak kodunu düzenleyebilir , geliştirebilir  hatta kişiselleştirebilirsiniz ve bu sayede gecikmiş veya yetersiz gördüğünüz yenilikleri şahsen kendiniz değiştirebilirsiniz. Bunun dışında ben bir öğrenci olduğumdan dolayı yenilemeler aksamaya uğrayabilir ve bazen sizin görüşünüz de söylediğim gibi yetersiz görünebilir. Ama eğer bu projeye destek olmak , ve Türkiye'yi desteklemek istiyorsanız bana sizin görüşünüzde eklenmesi gerekenleri söylemeniz veya bağış yapmanız yeterlidir.
 
 # Teknik Detaylar
    * **Python** ile yazılmıştır.

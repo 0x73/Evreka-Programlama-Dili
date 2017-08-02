@@ -3,7 +3,7 @@ def lex(filecontents):
     tokens = []
     var = ''
     varstarted = 0
-    state = 0
+    state = False
     string = ''
     expr = ''
     isexpr = 0
@@ -12,21 +12,23 @@ def lex(filecontents):
     for char in filecontents:
         tok += char
         if tok == ' ':
-            if state == 0:
+            if state == False:
                 tok = ''
-            else:
-                tok = ' '
+            elif state == True:
+                tok = " "
             if expr != '' and isexpr == 1:
                 tokens.append('OPER:' + expr)
                 expr = ''
+                tok = ''
             elif expr != '' and isexpr == 0:
                 tokens.append('SAYI:' + expr)
                 expr = ''
+                tok = ''
             elif var != '':
                 tokens.append('DEG:' + var)
                 var = ''
                 varstarted = 0
-            tok = ''
+                tok = ''
         elif tok == '\n' or tok == '<EOF>':
             if expr != '' and isexpr == 1:
                 tokens.append('OPER:' + expr)
@@ -41,7 +43,7 @@ def lex(filecontents):
             tok = ''
         elif tok == '\t':
             tok = ''
-        elif tok == '=' and state == 0:
+        elif tok == '=' and state == False:
             if expr != '' and isexpr == 0:
                 tokens.append('SAYI:' + expr)
                 expr = ''
@@ -54,7 +56,7 @@ def lex(filecontents):
             else:
                 tokens.append('ESITTIR')
             tok = ''
-        elif tok == '&' and state == 0:
+        elif tok == '&' and state == False:
             varstarted = 1
             var += tok
             tok = ''
@@ -90,14 +92,14 @@ def lex(filecontents):
             isexpr = 1
             tok = ''
         elif tok == '"' or tok == ' "':
-            if state == 0:
-                state = 1
-            elif state == 1:
+            if state == False:
+                state = True
+            elif state == True:
                 tokens.append(string + '"')
                 string = ''
-                state = 0
+                state = False
                 tok = ''
-        elif state == 1:
+        elif state == True:
             string += tok
             tok = ''
 

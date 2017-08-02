@@ -1,3 +1,6 @@
-&eur = girdi("Merhaba:")
-yazdir &eur
+&eur = "sss"
+&er = "sss"
 yazdir 100*100
+eger &eur == &er ise
+  yazdir "ssss"
+yap

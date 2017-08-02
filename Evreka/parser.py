@@ -23,7 +23,11 @@ def parser(toks):
                         toks[i + 1] = "SAYI:" + str(eval(toks[i + 1][5:]))
                     if toks[i + 3][0:4] == "OPER":
                         toks[i + 3] = "SAYI:" + str(eval(toks[i + 3][5:]))
-                    if int(toks[i + 1][5:]) == int(toks[i + 3][5:]):
+                    if toks[i + 1][0:4] == "DEG:":
+                        toks[i + 1] = alDEGISKEN(toks[i + 1][4:],symbols)
+                    if toks[i + 3][0:4] == "DEG:":
+                        toks[i + 3] = alDEGISKEN(toks[i + 3][4:],symbols)
+                    if toks[i + 1] == toks[i + 3]:
                         i += 5
                         while toks != 'YAP':
                             if toks[i] == 'YAZDIR':
@@ -104,7 +108,7 @@ def parser(toks):
 
 
     except Exception as e:
-        if e == "list index out of range":
+        if str(e) == "list index out of range":
             pass
         else:
             print(e)

@@ -9,7 +9,8 @@
 
 # Teknik Detaylar
    * **Python** ile yazılmıştır.
-   * Python'ın modül derleyicileri (**CPython**) ile derlenerek yüksek performans elde edilir.
+   * **Cython** kullanılarak modüller önce **C** kaynak dosyasına dönüştürülür.
+   * **C** kaynak dosyaları sonra **gcc** kullanılarak obje koduna derlenir ve yüksek performans elde edilir.
    * **BASIC**'e benzer bir yapıya sahiptir.
    * Türkçe bir sözdizimine sahip olduğu için öğrenmesi de ayrıca kolaydır.
 # Bağışlarınız için;

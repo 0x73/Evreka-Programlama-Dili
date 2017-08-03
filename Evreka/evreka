@@ -1,0 +1,32 @@
+#!/usr/bin/python2.7
+import os
+import time
+from sys import *
+from openfile import *
+from lex import *
+from parser import *
+
+symbols = {}
+
+def run_shell():
+    try:
+        print("Eureka 1.02v MIT(C) \n")
+        while True:
+            data = raw_input("<?>: ") + "<EOF>"
+            toks = lex(data)
+            parser(toks)
+            ##print(symbols)
+    except:
+        print("\n")
+        exit()
+
+def run_file():
+    data = openfile(argv[1])
+    toks = lex(data)
+    parser(toks)
+
+try:
+    test_a = argv[1]
+    run_file()
+except:
+    run_shell()

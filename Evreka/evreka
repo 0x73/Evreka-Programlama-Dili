@@ -10,7 +10,7 @@ symbols = {}
 
 def run_shell():
     try:
-        print("Eureka 1.02v MIT(C) \n")
+        print("Evreka 0.3v GPL 3.0v(C) \n")
         while True:
             data = raw_input("<?>: ") + "<EOF>"
             toks = lex(data)

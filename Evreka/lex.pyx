@@ -10,6 +10,7 @@ def lex(filecontents):
     n = ''
     filecontents = list(filecontents)
     for char in filecontents:
+        #print(tok)
         tok += char
         if tok == ' ':
             if state == False:
@@ -61,10 +62,20 @@ def lex(filecontents):
             var += tok
             tok = ''
         elif varstarted == 1:
-            var += tok
-            tok = ''
+            if tok != '+' or tok == '-' or tok == '*' or tok == '/' or tok == '%':
+                var += tok
+                tok = ''
+            else:
+                varstarted = 0
+                tok = ''
         elif tok == 'YAZDIR' or tok == 'yazdir':
             tokens.append('YAZDIR')
+            tok = ''
+        elif tok == 'EKLE' or tok == 'ekle':
+            tokens.append('EKLE')
+            tok = ''
+        elif tok == 'EKSILT' or tok == 'eksilt':
+            tokens.append('EKSILT')
             tok = ''
         elif tok == 'CIK' or tok == "cik":
             tokens.append("CIK")

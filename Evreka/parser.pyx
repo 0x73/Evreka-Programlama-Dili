@@ -7,7 +7,6 @@ def alDEGISKEN(varname, symbols):
 
 
 def YERLESTIR(varname, varvalue):
-    print("")
     global symbols
     symbols[varname[4:]] = varvalue
 
@@ -40,7 +39,7 @@ def parser(toks):
                                     data = data[5:]
                                     data = eval(data)
                                 elif data[0:3] == 'DEG':
-                                    print(symbols)
+                                    #print(symbols)
                                     data = alDEGISKEN(data[4:], symbols)
                                 print data
                                 i += 2
@@ -103,6 +102,48 @@ def parser(toks):
                 i += 3
             elif toks[i] == "CIK":
                 exit()
+            elif toks[i] == 'EKLE':
+                if toks[i + 2][0:4] == 'OPER':
+                    data = eval(toks[i + 2][5:])
+                    var_data = int(alDEGISKEN(toks[i + 1][4:],symbols))
+                    YERLESTIR(toks[i + 1],str(var_data + data))
+
+                    i += 3
+                elif toks[i + 2][0:4] == 'SAYI':
+                    data = int(toks[i + 2][5:])
+                    var_data = int(alDEGISKEN(toks[i + 1][4:],symbols))
+                    YERLESTIR(toks[i + 1],str(var_data + data))
+
+                    i += 3
+                elif  toks[i + 2][0:4] == 'DEG:':
+                    data =  int(alDEGISKEN(toks[i + 2][4:],symbols))
+                    var_data = int(alDEGISKEN(toks[i + 1][4:],symbols))
+                    YERLESTIR(toks[i + 1],str(var_data + data))
+
+                    i += 3
+                else:
+                    i += 3
+            elif toks[i] == 'EKSILT':
+                if toks[i + 2][0:4] == 'OPER':
+                    data = eval(toks[i + 2][5:])
+                    var_data = int(alDEGISKEN(toks[i + 1][4:],symbols))
+                    YERLESTIR(toks[i + 1],str(var_data - data))
+
+                    i += 3
+                elif toks[i + 2][0:4] == 'SAYI':
+                    data = int(toks[i + 2][5:])
+                    var_data = int(alDEGISKEN(toks[i + 1][4:],symbols))
+                    YERLESTIR(toks[i + 1],str(var_data - data))
+
+                    i += 3
+                elif  toks[i + 2][0:4] == 'DEG:':
+                    data =  int(alDEGISKEN(toks[i + 2][4:],symbols))
+                    var_data = int(alDEGISKEN(toks[i + 1][4:],symbols))
+                    YERLESTIR(toks[i + 1],str(var_data - data))
+
+                    i += 3
+
+
             else:
                 i += 1
 

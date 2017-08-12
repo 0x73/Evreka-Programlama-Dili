@@ -75,8 +75,20 @@ def lex(filecontents):
         elif tok == 'EKLE' or tok == 'ekle':
             tokens.append('EKLE')
             tok = ''
+        elif tok == 'ÇARP' or tok == 'çarp':
+            tokens.append('CARP')
+            tok = ''
+        elif tok == 'BÖL' or tok == 'böl':
+            tokens.append('BOL')
+            tok = ''
         elif tok == 'EKSİLT' or tok == 'eksilt':
             tokens.append('EKSILT')
+            tok = ''
+        elif tok == 'İKEN' or tok == 'iken':
+            tokens.append('IKEN')
+            tok = ''
+        elif tok == 'TEKRARLA' or tok == 'tekrarla':
+            tokens.append('TEKRARLA')
             tok = ''
         elif tok == 'ÇIK' or tok == "çık":
             tokens.append("CIK")

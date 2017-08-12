@@ -1,4 +1,12 @@
 #!/usr/bin/python2.7
+# -*- coding: utf-8 -*-
+
+# |-------------------------------| Evreka Programlama Dili |--------------------------------|
+# Evreka, Python3 ile yazılmış, ve C koduna derlendikten sonra nesne koduna derlenen modülleri
+# sayesinde yüksek performanslı, BASIC 'in benzer ve türkçe sözdizimli bir programlama dilidir
+#
+# Geliştirici: Eralp Çelebi
+
 import os
 import time
 from sys import *
@@ -30,4 +38,4 @@ if len(argv) == 2:
 elif len(argv) == 1:
     run_shell()
 else:
-    print("HATA: COK FAZLA ARGUMAN GIRILDI")
+    print("HATA: ÇOK FAZLA ARGÜMAN GİRİLDİ")

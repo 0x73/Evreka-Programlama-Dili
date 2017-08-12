@@ -1,5 +1,5 @@
 install:
-	python2.7 setup.py build_ext --inplace
+	cythonize -i *.pyx
 	chmod +x evreka
 	sudo cp evreka /usr/bin/
 	mkdir ../src
@@ -9,7 +9,7 @@ install:
 	mkdir ./src
 	mv ../src/* ./src
 run:
-	python2.7 setup.py build_ext --inplace
+	cythonize -i *.pyx
 	rm -rf ./build
 	chmod +x evreka
 	mkdir ./src

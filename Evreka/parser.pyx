@@ -61,18 +61,7 @@ def parser(toks,i):
                     else:
                         while toks[i] != 'TEKRARLA':
                             i += 1
-                if toks[i - 2] == 'ESES':
-                    if toks[i - 1][0:4] == "OPER":
-                        toks[i - 1] = "SAYI:" + str(eval(toks[i - 1][5:]))
-                    if toks[i - 3][0:4] == "OPER":
-                        toks[i - 3] = "SAYI:" + str(eval(toks[i - 3][5:]))
-                    if toks[i - 1][0:4] == "DEG:":
-                        toks[i - 1] = alDEGISKEN(toks[i - 1][4:],symbols)
-                    if toks[i - 3][0:4] == "DEG:":
-                        toks[i - 3] = alDEGISKEN(toks[i - 3][4:],symbols)
-                    while toks[(i - 3) -_i] == toks[(i - 3) - _i]:
-                        while toks[i] != 'TEKRARLA':
-                            parser(toks)
+                
             elif toks[i] == 'YAZDIR':
                 data = toks[i + 1]
                 if data[0] == '"':

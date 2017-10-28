@@ -1,5 +1,5 @@
 # Evreka: Programlama-Dili
-**Evreka**, Python'ın gücü , C'nin performansı ve BASIC'in kolaylığını tek bir çatı altında toplayan, türkçe yapılı , yüksek seviye bir programlama dilidir.
+**Evreka**, Python'ın gücü ve BASIC'in kolaylığını tek bir çatı altında toplayan, türkçe yapılı , yüksek seviye bir programlama dilidir.
 
 # Evreka'nın Amacı
 **Evreka** ; Türkiye'deki bilgisayar bilimlerine katkıda bulunmak , bilimsel kalkınmaya yardım etmek ve öğrencilerin ya da yeni programlamaya başlayanların kolay fonksiyonlar ve kod yapısı ile herkesin program yazabileceğini fark etmelerini sağlamaktır.
@@ -9,8 +9,7 @@
 
 # Teknik Detaylar
    * **Python** ile yazılmıştır.
-   * **Cython** kullanılarak modüller önce **C** kaynak dosyasına dönüştürülür.
-   * **C** kaynak dosyaları sonra **gcc** kullanılarak obje koduna derlenir ve yüksek performans elde edilir.
+   * **Pyinstaller** ile çalıştırılabilir koda derlenmiştir.
    * **BASIC**'e benzer bir yapıya sahiptir.
    * Türkçe bir sözdizimine sahip olduğu için öğrenmesi de ayrıca kolaydır.
 # Bağışlarınız için;

@@ -12,7 +12,7 @@ import time
 from sys import *
 from openfile import *
 from lex import *
-from parser import alDEGISKEN,YERLESTIR,parser
+from parser import parser
 
 symbols = {}
 
